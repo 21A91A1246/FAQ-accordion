@@ -1,0 +1,76 @@
+*{
+    border: 0;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: hsl(275, 100%, 97%);
+    font-family: sans-serif;
+    line-height: 1.4;
+    height: 30rem;
+}
+.mainDiv{
+    background-color: aliceblue;
+    width: 38%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin-top: 13%;
+    margin-left: 35%;
+    box-shadow:   4px 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+    padding-bottom: 15px;
+}
+
+.background-image {
+    position: absolute; /* Ensure it stays behind the content */
+    top: 0;
+    left: 0;
+    width: 100%; /* Full width */
+    height: 40%; /* Full height */
+    object-fit: cover; /* Maintain aspect ratio and cover entire area */
+    z-index: -1; /* Push it behind other content */
+}
+
+.innerDiv{
+    text-align: left;
+    
+}
+
+.header {
+    display: flex; /* Align items in a single row */
+    align-items: center; /* Vertically align the image and text */
+    gap: 10px; /* Add spacing between FAQs and the star icon */
+    margin-bottom: 20px; /* Add spacing below the header */
+}
+.header h2 {
+    margin: 0; /* Remove default margin from h2 */
+    font-size: 1.5rem; /* Adjust font size */
+    color: hsl(292, 42%, 14%); /* Custom color for "FAQs" */
+}
+.header img {
+    height: 24px; /* Adjust star icon size */
+    width: auto; /* Maintain aspect ratio */
+}
+
+summary{
+    font-size: 15px;
+    color: hsl(292, 42%, 14%);
+    font-weight: bold;
+    padding: 15px;
+    display: inline-flex; 
+    cursor: pointer;
+}
+
+summary:hover{
+    color: hsl(293, 66%, 53%);
+}
+
+p{
+    padding: 20px;
+    padding-top: 0;
+    font-size: 11px;
+    font-weight: 500;
+    opacity: 70%;
+}
